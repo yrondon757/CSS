@@ -1,0 +1,121 @@
+/* Esto ES UN COMENTARIO */
+/*
+Esto es un
+comentario
+de varias lineas
+*/
+
+
+
+/* SELECTORES */
+/* Selector por etiqueta HTML (Este selector es en grupo, es decir aplica todos los estilos a todas las etiquetas con ese nombre) */
+h2{
+    color: blueviolet;
+}
+
+/* Selecto por ID (Este selecto es unico, es decir es como una cedula */
+#subtitulo{
+    color: chocolate;
+}
+
+#subtitulo2{
+    color: crimson;
+}
+
+/* Selector por Clase (Este selector es en grupo) */
+.textgreen{
+    color: green;
+}
+
+.fondorojo{
+    background-color: red;
+}
+
+/* Selector por Grupo */
+#subtitulo3, #subtitulo4{
+    color: fuchsia;
+}
+
+/* Selector por Anidamiento */
+span{
+    color: yellow;
+}
+
+#divisionone span{
+    color: darkblue;
+}
+
+#divisiontwo span{
+    color: red;
+}
+
+/* Selector Universal */
+/* *{
+    background-color: black;
+} */
+
+
+
+
+/* VARIABLES */
+:root{
+    --color-favorito: blue;
+    --color-secundario: purple;
+}
+
+main{
+    color: var(--color-favorito);
+    background-color: var(--color-secundario);
+}
+
+aside{
+    color: var(--color-favorito);
+    background-color: var(--color-secundario);
+}
+
+
+
+
+/* PROPIEDADES CSS PARA TEXTO */
+section h1{
+    /* color: Nos permite darle un color al Texto */
+    color: red;
+    /* font-size: Nos permite darle un tamaño al Texto */
+    font-size: 50px;
+    /* font-weight: Nos permite darle un grosor al Texto */
+    font-weight: 900;
+    /* font-family: Nos permite cambiar la fuente del Texto */
+    font-family: sans-serif;
+    /* text-align: Nos permite cambiar la posicion del Texto */
+    text-align: start;
+    /* text-decoration: Nos permite cambiar la decoracion del texto
+    text-decoration-line
+    text-decoration-line: underline;
+    text-decoration-color
+    text-decoration-color: black;
+    text-decoration-style
+    text-decoration-style: wavy;
+    text-decoration-thinkness
+    text-decoration-thickness: 5px; */
+    text-decoration: underline black wavy 5px;
+   
+    /* text-transform: Nos permite cambiar de Mayusculas o Minusculas */
+    text-transform: capitalize;
+    /* text-indent: Nos permite cambiar la identacion */
+    text-indent: 50px;
+    /* letter-spacing: Nos permite controlar el espaciado de letras */
+    letter-spacing: 10px;
+    /* line-height: Nos permite controlar el espacio entre linea de texto */
+    line-height: 70px;
+    /* word-spacing Nos permite controlar el espacio entre palabras */
+    word-spacing: 70px;
+    
+}
+
+section a{
+    text-decoration: none;
+    font-size: 100px;
+    /* text-shadow: Nos permite controlar la sombra del texto */
+    /* 1er valor controla el eje X, 2do valor controla el eje Y, 3er valor controla el desenfoque, 4to valor para darle color a la sombra */
+    text-shadow: 50px 20px 10px black;
+}
