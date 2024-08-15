@@ -119,3 +119,165 @@ section a{
     /* 1er valor controla el eje X, 2do valor controla el eje Y, 3er valor controla el desenfoque, 4to valor para darle color a la sombra */
     text-shadow: 50px 20px 10px black;
 }
+
+section ul{
+    /* list-style: Nos permite modificar el estilo de la lista */
+    list-style: disc;
+}
+
+
+
+
+/* TAMAÑOS */
+#tamano{
+    /* width: Nos permite darle un valor a la anchura del elemento */
+    width: 500px;
+    /*height: Nos permite darle un valor a la altura del elemento */
+    height: 300px;
+    /* max-width: Nos permite colocar un limite de anchura */
+    max-width: 500px;
+    /* min-width: Nos permite colocarle un limite de anchura */
+    min-width: 400px;
+    /* max-height: Nos permite colocarle un maximo de altura */
+    max-height: 400px;
+    /* min-height: Nos permite colocarle un minimo de altura */
+    min-height: 300px;
+
+    background-color: green;
+}
+
+#tamano img{
+    width: 250px;
+}
+
+
+
+
+/* UNIDADES DE MEDIDA */
+/* em (Se basa en el tamano fuente del elemento padre) */
+/* rem (Se basa en el tamano de fuente del elemento raiz del documento */
+/* vw (viewport width) */
+/* vh (viewport height) */
+/* % */
+/* vmin (minimo del viewport) */
+/* vmax (maximo del viewport) */
+/* px (pixeles) */
+/* auto (automatico) */
+
+/* Un parrafo de manera predeterminada tiene un tamano de 16px */
+#umedida{
+    font-size: 20px;
+}
+
+/* font-size: 1.5rem; 2em es igual a 16x2 = 32px | 16px + 16px + 16px = 3em*/
+#umedida p{
+    font-size: 3em;
+}
+
+#viewportest{
+    width: 50vw; /* 50% de anchura del viewport witdh */
+    height: 80vh; /* 50% de altura del viewport height */
+    background-color: blue;
+}
+
+#porcentaje{
+    height: 400px;
+    background-color: purple;
+}
+
+#porcentaje div{
+    /* PORCENTAJE */
+    width: 50%;
+    height: 80%;
+    background-color: green;
+}
+
+#viewportmaxmin{
+    /* VIEWPORT MIN Y MAX */
+    width: 80vmax; /* 80% DEL MAXIMO DE VALOR DEL VIEWPORT */
+    height: 400px;
+    background-color: deepskyblue;
+}
+
+#auto{
+    background-color: yellow;
+    height: auto;
+    /* max-height: 500px; */
+
+}
+
+#auto div{
+    color: white;
+    height: 200px;
+    background-color: black;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+/* BACKGROUND (FONDO) */
+#fondo{
+    height: 300px;
+    /* background-color: Nos permite colocar un color de fondo */
+    /* RGBA: R (red) G (green) B (blue) A (alpha) */
+    /* background-color: rgb(203,67,101, 0.855);m */
+    /*
+    HEXADECIMAL
+    0 = 0
+    1 = 1
+    2 = 2
+    3 = 3
+    4 = 4
+    5 = 5
+    6 = 6
+    7 = 7
+    8 = 8
+    9 = 9
+    A = 10
+    B = 11
+    C = 12
+    D = 13
+    E = 14
+    F = 15 = 255
+
+    #FFF
+        RGB
+    #FF=R FF=G FF=B FF=Alpha | #FFFFFFFF
+
+    Convertit de Hexadecimal a RGB
+    #FF5733
+    R = (15 * 16) + 15 = 255
+    G = (5 * 16) + 7 = 87
+    B = (3 * 16) + 3 = 51
+    rbg(255, 87, 51)
+    */
+    /* background-color: rgb(255, 87, 51); */
+    
+    /* background-image: Nos permite colocar una imagen de fondo */
+    /* Ruta IMAGEN INTERNET */
+    /* background-image: url("https://th.bing.com/th/id/OIP.DEQ-k0Cc-mtILKYQCzXpoAHaEo?rs=1&pid=ImgDetMain"); */
+    /* Ruta de IMAGEN LOCAL */
+    /* background-image: linear-gradient(to left,red,yellow, green, blue),url("/images/Dragon_Ball_Z.png"); */
+    background-image: linear-gradient(120deg,rgba(0, 0, 0, 0.59), transparent),url("/images/Dragon_Ball_Z.png");
+}
+
+#fondo h1{
+    color: white;
+}
+
+#fondo2{
+    height: 100vh;
+    background-image: url("https://images.vexels.com/content/130970/preview/hipster-male-character-2-8ab29b.png"),linear-gradient(to top, red, transparent),url("https://static.vecteezy.com/system/resources/previews/026/775/963/non_2x/colorfull-cartoon-lanscape-scene-natur-park-sunset-vector.jpg");
+    /* backgroung-repeat: Nos permite controlar si la imagen de fondo se repite */
+    /* El valor que coloquemos depende del orden de las imagenes, ejemplo la 1ra imagen va con el 1er valor que seria (no-repeat) al separarlos con comas */
+    background-repeat: no-repeat;
+    /* background-size: Nos permite controlar el tamano de la imagen de fondo */
+    /* Propiedad contain; la imagen se ajustara de manera proporcionada al elemento padre sin salirse de sus limites */
+    /* Propiedad cover; la imagen ocupara todo el elemento padre sin distorsionar la imagen, conserva las proporciones originales pero rellenando todo el elemento */
+    background-size: 500px /*400px*/, cover, cover;
+    /* background- position: Nos permite controlar la posicion de la imagen de fondo */
+    background-position: 500px 300px, center, center;
+    /* background-attachment: Nos permite fijar el fondo */
+    background-attachment: fixed, scroll, scroll;
+}
