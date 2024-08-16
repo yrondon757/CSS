@@ -281,3 +281,35 @@ section ul{
     /* background-attachment: Nos permite fijar el fondo */
     background-attachment: fixed, scroll, scroll;
 }
+
+
+
+/* BORDES */
+#bordes{
+    height: 600px;
+    background-color: gray;
+}
+
+#bordes section{
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(57, 57, 57);
+    /* border */
+    /* border-style
+    border-style: dashed;
+    border-width
+    border-width: 10px;
+    border-color 
+    border-color: red; */
+    border: solid 10px red;
+    border-bottom: solid 10px green;
+    border-left: solid 10px purple;
+    /* border-radius */
+    /* border-radius: 50%;   (crea un circulo) */
+    /* border-radius: 50px;   (redondea las esquinas) */
+    /* con 4 valores, 1ro superior izq, 2do superios der, 3ro inferior der, 4to parte inferior izq */
+    border-radius: 100% 25% 25% 25%;
+    
+}

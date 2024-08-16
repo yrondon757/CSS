@@ -1,0 +1,17 @@
+/* MARGIN (Margen Externo) */
+.margen{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    /* Margin */
+    /* margin-top: Margen en la parte Superior
+    margin-top: 0px;
+    margin-right: Margen en la parte Derecha
+    margin-right: 400px;
+    margin-bottom: Margen en la parte Inferior
+    margin-bottom: 100px;
+    margin-left: Margen en la parte Izquierda
+    margin-left: 100px; */
+    /* Con un solo valor le aplica el margen a todos los lados. Si tiene un segundo valor, el 1ro aplica a la parte superior e inferior y el 2do aplica a los laterales */
+    margin: 50px 10px 20px 30px;
+}
