@@ -1,0 +1,69 @@
+/* POSICIONES */
+/*position:static : Es el valor predeterminado que traen los elementos */
+#seccion1, #seccion2{
+    width: 600px;
+    height: 500px;
+}
+
+#seccion1{
+    background-color: green;
+    /* position: static; es la posicion predeterminda del elemento */
+    /* position:relative : */
+    /* si el elemento padre tiene posicion relative y el hijo tiene posicion abolute, el hijo respetara los limites del elemento padre, pero si el elemento padre tiene posicion static, el hijo se guiara por los limites de la pagina */
+    /* position: relative; /*
+    /* position:absolute*/
+    position: relative;
+    /* top - bottom - left - right : no funcionan con la propiedad static solamente */
+    left: 0;
+    top: 0;
+}
+
+#seccion1 div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: yellow;
+}
+
+#seccion2{
+    background-color: red;
+}
+
+#formulario{
+    height: 100vh;
+}
+
+#formulario form .container_usuario{
+    position: relative;
+    background-color: green;
+}
+
+#formulario form .container_usuario input{
+    padding-left: 20px;
+}
+
+#formulario form .container_usuario img{
+    position: absolute;
+    width: 15px;
+    left: 3px;
+    top: 2.5px;
+}
+/* position:fixed */
+nav{
+    width: 100vw;
+    height: 60px;
+    background-color: purple;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+/* position:sticky */
+#publicidad{
+    width: 100%;
+    height: 100px;
+    background-color: orange;
+    position: sticky;
+    top: 0;
+}
