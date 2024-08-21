@@ -22,3 +22,22 @@ section div{
     font-size: 25px;
     font-weight: bold;
 }
+
+
+/* FLEX-WRAP */
+main{
+    height: auto;
+    min-height: 60vh;
+    background-color: purple;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main div{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+}
