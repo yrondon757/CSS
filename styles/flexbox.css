@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* BOX-SIZING (Funciona para que los elementos mantengan su tamano normal que se asigne con height y width. Un elemento que se le agregue un margin o padding y esta propiedad no este acitva, el tamano de ese elemento aumentara con los valores que se le coloquen con margin y padding */
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: rgb(135, 206, 250);
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    padding: 0px 50px;
+    /* FLEXBOX */
+    display: flex;
+    /* JUSTIFY-CONTENT (Maneje el EJE X) */
+    /* justify-content: start; */
+    /* justify-content: space-between (Los elementos estaran lo mas separados posibles */
+    justify-content: space-between;
+    /* ALIGN-ITEMS (Maneja el EJE Y) */
+    align-items: center;
+    
+}
+
+header p{
+    font-size: 25px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    /* Propiedad GAP = Permite crear una separacion entre los elementos */
+    /* 1er Valor afecta al EJE Y, 2do valor afecta al EJE X*/
+    gap: 0px 20px;
+}
+
+main{
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    /* ALIGN-ITEMS (Maneja el EJE Y) */
+    align-items: center;
+    /* FLEX-DIRECTION (De manera predeterminada los elementos estan en fila) */
+    /* row = fila, column = columna */
+    /* Cuando la direccion esta en fila JUSTIFY-CONTENT maneja el EJE X y ALIGN-ITEMS maneja el EJE Y. Pero cuando la direccion este en columna los EJES se invierten */
+    flex-direction: column;
+    gap: 10px 0px;
+}
+

@@ -1,0 +1,16 @@
+/* PROPIEDAD DISPLAY */
+#div1{
+    /* display: none; (Oculta el elemento) */
+    /* display: none; */
+    /* display: block (Ocupa el 100% de su tamano en anchura) */
+    /* display: block; */
+    display: inline;
+}
+
+#div1 ul li{
+    display: inline;
+}
+
+#div1 img{
+    display: block;
+}

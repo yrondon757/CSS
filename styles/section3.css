@@ -48,7 +48,8 @@
     position: absolute;
     width: 15px;
     left: 3px;
-    top: 2.5px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 /* position:fixed */
 nav{
@@ -57,7 +58,7 @@ nav{
     background-color: purple;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 /* position:sticky */
 #publicidad{
@@ -66,4 +67,60 @@ nav{
     background-color: orange;
     position: sticky;
     top: 0;
+    /* PARA CONTROLAR EL EJE Z (profundidad) debemos usar la propiedad z-index */
+    z-index: 1;
+}
+
+
+
+
+/* TRANSFORM (Transformaciones) */
+#transformaciones{
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+#transformaciones div:nth-child(1){
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    /* transform (trasladar, rotar, escalar, deformar) */
+    /* transform: translate(200px, 300px); */
+    /* transform: rotate(60deg); */
+    /* transform: scale(1, 2); */
+    transform: skew(20deg, 20deg);
+}
+
+#transformaciones div:nth-child(2){
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+}
+
+#transformaciones div:nth-child(3){
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-55%, -50%);
+    z-index: 10;
+}
+
+#transformaciones div:nth-child(4){
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-53%, -50%);
+    z-index: 8;
 }
