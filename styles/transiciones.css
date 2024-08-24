@@ -1,0 +1,44 @@
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+main button{
+    padding: 20px 45px;
+    border: 0;
+    border-radius: 30px;
+    background-color: purple;
+    color: white;
+    font-size: 30px;
+
+    /* TRANSICIONES */
+    /* transition-property : Permite indicar cual es la propiedad que le queremos aplicar la transcicion */
+    /* transition-property: background-color; */
+    transition-property: all;
+    /* transition-duration : Permite indicar el tiempo de duracion de la transicion */
+    transition-duration: 1s;
+    /* transition-timing-function : Permite controlar la curva de velocidad */
+    transition-timing-function: cubic-bezier(1, 0.4, 0.3, 0.2);
+    /* transition-delay : Permite agregar un retraso en la transicion */
+    transition-delay: 1s;
+    /* transition */
+    transition: all 1s cubic-bezier(1, 0.4, 0.3, 0.2) 1s;
+}
+
+/* main button:nth-child(1){
+    transition-timing-function: linear;
+}
+
+main button:nth-child(2){
+    transition-timing-function: ease-out;
+} */
+
+main button:hover{
+    background-color: rgb(39, 0, 39);
+    cursor: pointer;
+    font-size: 50px;
+    transform: rotate(360deg);
+}
